@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+  }
+  
+  header {
+    background-color: #0b1c51;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    /* Sets text color to white. */
+    color: #fff;
+    /* Centers the text. */
+    text-align: center;
+    /* Removes the default margin and spacing around the `h1` element. */
+    margin: 0;
+    /* Pushes the text down 20 pixels from the top of the page. */
+    padding-top: 20px;
+    font-size: 52;
+  }
+  
+  header nav {
+    /* Changes the display property from its default to `flex`. */
+    display: flex;
+    /* Centers an element defined as `display: flex`. */
+    justify-content: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    font-family: Montserrat;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+  }
+  header nav ul li:last-child a {
+    margin-right: 0;
+  }
+  
+  @media all and (min-width: 600px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+  
+    header h1 {
+      font-size: 42px;
+      margin: 14px 0;
+      padding-top: 6px;
+    }
+  
+    header nav {
+      margin-top: 14px;
+    }
+  
+    header nav ul li a:hover {
+      color: #bdbdbd;
+    }
+  }
